@@ -6,4 +6,4 @@ Our team utilized the Raspberry Pi Zero W for this project.
 The Raspberry Pi's UART (Universal Asynchronous Receiver/Transmitter) is disabled by default. To enable it, the hardware will need to be reconfigured.
 The user would need to open terminal and then run:
 '''bash
-sudo raspi-config
+sudo raspi-config'''
