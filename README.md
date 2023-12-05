@@ -32,6 +32,9 @@ libcurl is a great way to fetch our weather data from the Open-Meteo API. It's a
 To install, simply run this line in the terminal:
 `sudo apt-get install libcurl4-openssl-dev`
 
+There is a libcurl website with documentation that helps the user create their own client side url transfers.
+https://curl.se/libcurl/c/libcurl.html
+
 ### Wiring
 
 **On the Pi:**  
@@ -55,7 +58,7 @@ We used PWM capable pins p23, p24, and p25 for controlling the RGB LED colors.
 - Compile and upload mbed code to the LPC1768
 - Execute the weather_fetcher.c code on Geany (or any other C compiler)
 
-The user should then see the temperature of Atlanta updating in real time every 30 seconds.
+The user should then see the temperature of Atlanta updating in real time on the uLCD every 30 seconds.
 ```c
 while(1) {
         // Fetch data, parse, and send over UART...
