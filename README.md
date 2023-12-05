@@ -65,3 +65,9 @@ while(1) {
         sleep(30); // Check every 30 seconds
     }
 ```
+
+## The Big Picture / The Idea
+Our team wanted to create an embedded weather application that displays Atlanta's weather with a quick look (instantly - without the hassle of asking Google Home, or opening the Weather app!).
+ 
+At the core of the technology, the application fetches current weather data for free through the OPEN-METEO API, specifically tailored for the Atlanta area, and displays the info with a nice and user-friendly interface.
+The processing unit of the Pi Zero W executes the weather_fetcher.c program responsible for asking OPEN-METEO API to give us the temperature at regular intervals (30 seconds, can be configured easily with sleep()) ensuring that the user gets up-to-date with their data. This is made possible with the Libcurl (client-side URL transfer library) which supports a large range of protocols like HTTP, HTTPS, etc. The libcurl allows us to fetch the OPEN-METEO API data without much hassle and knowledge of network-comms - allowing the user to get the Atlanta Tmperature. When the data is received, the program outputs a text file named weather_data.txt - a raw file that we need to parse through. The program parses through just to find the temperature value and converts the string into a float value for it to be read on the mBed LPC1768. We also needed to open serial communication between the LPC1768 and Pi through UART. Once the temperature is transferred over, we display the current information on the uLCD-144-G2 and through the RGB LED. The font of the temperature on the LCD is made as big as possible for the user to be able to read it easily.
