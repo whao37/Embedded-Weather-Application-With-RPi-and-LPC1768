@@ -1,7 +1,7 @@
 # Embedded-Weather-Application-With-RPi-and-LPC1768
 Developed and Maintained By: Luke Weidner, Gillian Kearny, William Hao
 
-This project involves using a Raspberry Pi Zero W to fetch weather data for Atlanta using the OPEN-METEO API, which is then transmitted to an mbed LPC1768 board. The LPC1768 displays the temperature on a uLCD-144-G2 graphical LCD from SparkFun and uses an RGB LED to indicate temperature ranges.
+This project features an integration of a Raspberry Pi Zero W with the OPEN-METEO API to acquire real-time weather data for the Atlanta area. The collected data is transmitted to an mbed LPC1768 board. The current temperature is displayed through a SparkFun uLCD-144-G2 LCD and an RGB LED to indicate various temperature ranges through color changes, providing an intuitive and visual representation of the weather conditions.
 
 ![unnamed](https://github.com/whao37/Embedded-Weather-Application-With-RPi-and-LPC1768/assets/86330766/6de370ce-77b8-496b-98f6-f332a0d26d52)
 ## Hardware Requirements
@@ -12,10 +12,10 @@ This project involves using a Raspberry Pi Zero W to fetch weather data for Atla
 - Connecting wires
 
 ## Software Requirements
-- Raspian OS
+- Raspbian OS
 - Geany
 - mbed compiler for the LPC1768 (Keil Studio)
-- libcurl for network commmunication handling
+- libcurl for network communication handling
 
 ## Setup Instructions
 ### Enabling UART on the Raspberry Pi
