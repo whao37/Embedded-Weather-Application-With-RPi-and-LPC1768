@@ -1,4 +1,4 @@
-# Embedded-Weather-Application-With-RPi-and-LPC1768
+# Embedded Weather View
 Developed and Maintained By: Luke Weidner, Gillian Kearny, William Hao
 
 This project features an integration of a Raspberry Pi Zero W with the OPEN-METEO API to acquire real-time weather data for the Atlanta area. The collected data is transmitted to an mbed LPC1768 board. The current temperature is displayed through a SparkFun uLCD-144-G2 LCD and an RGB LED to indicate various temperature ranges through color changes, providing an intuitive and visual representation of the weather conditions.
